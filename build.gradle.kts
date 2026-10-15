@@ -47,7 +47,7 @@ dependencies {
     compileOnly(libs.jetbrains.annotations)
     testImplementation("org.junit.jupiter:junit-jupiter:5.11.0")
     testImplementation("org.assertj:assertj-core:3.27.7")
-    testRuntimeOnly("org.junit.platform:junit-platform-launcher:1.11.0")
+    testRuntimeOnly("org.junit.platform:junit-platform-launcher:6.1.3")
 
     directSecurity("org.apache.commons:commons-text:1.14.0")
     transitiveSecurity("org.apache.commons:commons-configuration2:2.15.0")
