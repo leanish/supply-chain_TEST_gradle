@@ -1,6 +1,6 @@
 [versions]
 slf4j = "1.7.36"
-annotations = "24.0.1"
+annotations = "24.1.0"
 beanutils = "1.11.0"
 
 [libraries]

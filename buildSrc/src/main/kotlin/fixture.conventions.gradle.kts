@@ -7,5 +7,5 @@ repositories {
 }
 
 dependencies {
-    implementation("commons-io:commons-io:2.17.0")
+    implementation("commons-io:commons-io:2.22.0")
 }
