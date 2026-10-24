@@ -8,7 +8,7 @@ val strictLower = providers.gradleProperty("fixture.strictLower")
     .orElse(false)
 
 dependencies {
-    add(declaredLower.name, "org.apache.httpcomponents:httpclient:4.5.13")
+    add(declaredLower.name, "org.apache.httpcomponents:httpclient:4.5.14")
     if (strictLower.get()) {
         add(declaredLower.name, "org.apache.httpcomponents:httpcore") {
             version {
@@ -16,7 +16,7 @@ dependencies {
             }
         }
     } else {
-        add(declaredLower.name, "org.apache.httpcomponents:httpcore:4.4.10")
+        add(declaredLower.name, "org.apache.httpcomponents:httpcore:4.4.16")
     }
 }
 

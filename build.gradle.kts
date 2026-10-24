@@ -5,7 +5,7 @@ import org.gradle.api.attributes.Usage
 plugins {
     `java-library`
     id("fixture.conventions")
-    id("org.ajoberstar.grgit") version "5.3.2" apply false
+    id("org.ajoberstar.grgit") version "5.3.3" apply false
 }
 
 repositories {
@@ -41,16 +41,16 @@ val floorSecurity by configurations.creating {
 }
 
 dependencies {
-    implementation("commons-codec:commons-codec:1.16.0")
+    implementation("commons-codec:commons-codec:1.23.0")
     implementation(libs.slf4j.api)
     implementation("org.yaml:snakeyaml:1.33")
     compileOnly(libs.jetbrains.annotations)
-    testImplementation("org.junit.jupiter:junit-jupiter:5.11.0")
+    testImplementation("org.junit.jupiter:junit-jupiter:5.14.4")
     testImplementation("org.assertj:assertj-core:3.27.7")
-    testRuntimeOnly("org.junit.platform:junit-platform-launcher:1.11.0")
+    testRuntimeOnly("org.junit.platform:junit-platform-launcher:1.14.4")
 
-    directSecurity("org.apache.commons:commons-text:1.14.0")
-    transitiveSecurity("org.apache.commons:commons-configuration2:2.15.0")
+    directSecurity("org.apache.commons:commons-text:1.15.0")
+    transitiveSecurity("org.apache.commons:commons-configuration2:2.15.1")
     okhttpSecurity("com.squareup.okhttp3:okhttp:4.12.0")
     floorSecurity("commons-beanutils:commons-beanutils:1.11.0")
     floorSecurity(libs.commons.beanutils) {
