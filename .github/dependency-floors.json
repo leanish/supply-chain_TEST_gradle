@@ -2,23 +2,16 @@
   "floors": [
     {
       "ecosystem": "Maven",
-      "package": "commons-beanutils:commons-beanutils",
-      "version": "1.11.0",
-      "declaredIn": "build.gradle.kts",
-      "selector": [":floorSecurity"],
-      "purpose": "security",
-      "advisories": ["GHSA-6phf-73q6-gh87", "GHSA-p66x-2cv9-qq3v", "GHSA-wxr5-93ph-8wr9"],
-      "reason": "commons-digester3 3.2 brings vulnerable BeanUtils; the selected plan has no eligible parent update",
-      "added": "2026-10-11"
-    },
-    {
-      "ecosystem": "Maven",
       "package": "org.jetbrains.kotlin:kotlin-gradle-plugin",
       "version": "2.4.20",
       "declaredIn": "buildSrc/build.gradle.kts",
-      "selector": ["buildSrc/:buildscript.classpath"],
+      "selector": [
+        "buildSrc/:buildscript.classpath"
+      ],
       "purpose": "security",
-      "advisories": ["GHSA-r937-wjx7-w2jp"],
+      "advisories": [
+        "GHSA-r937-wjx7-w2jp"
+      ],
       "reason": "The Kotlin DSL plugin brings a vulnerable Kotlin Gradle plugin onto buildSrc's buildscript classpath",
       "added": "2026-10-11"
     }
